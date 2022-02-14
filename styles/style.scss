@@ -1,0 +1,782 @@
+@import 'variables.scss';
+@import 'shortcast.scss';
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Ubuntu', sans-serif;
+	color: $white;
+	text-decoration: none;
+	outline: none;
+	list-style: none;
+	border: none;
+}
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+html {
+	scroll-behavior: smooth;
+	background: $black;
+	font-size: 17px;
+}
+.nav__mobileBtn,
+.navigation__btn,
+.home__btn,
+.others .card {
+	cursor: pointer;
+}
+.home__background,
+.home__quotote,
+.quotote,
+.enumeration,
+.baner,
+.articles,
+.leaders,
+.map,
+.ornament,
+.other__articles,
+.other__articles__description,
+.recapitulation,
+footer {
+	width: 100%;
+	max-width: 1300px;
+}
+// nav section
+.nav {
+	position: sticky;
+	top: 0;
+	width: 100%;
+	padding: 0.4em 2.5em;
+	background: $black;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 1;
+	border-bottom: 3px solid $lightColor;
+	&__logo {
+		display: flex;
+		align-items: center;
+		font-weight: 500;
+		.main__letter {
+			color: $lightColor;
+			font-size: 3.5em;
+			margin-right: 6px;
+		}
+		.second__letters {
+			font-size: 1.1em;
+			display: flex;
+			flex-direction: column;
+		}
+	}
+	&__menu {
+		display: flex;
+		font-size: 1.1em;
+		font-weight: 500;
+		.link {
+			position: relative;
+			margin-left: 3.2em;
+			&::before {
+				content: '';
+				position: absolute;
+				width: 130%;
+				height: 3px;
+				left: -15%;
+				top: 130%;
+				background: $lightColor;
+				transform: scaleX(0);
+				transform-origin: right;
+				transition: transform 0.2s ease-in;
+			}
+			&:hover::before {
+				transform: scaleX(1);
+				transform-origin: left;
+			}
+			a {
+				transition: color 0.1s ease-in;
+			}
+			&:hover a {
+				color: $lightColor;
+			}
+		}
+	}
+	&__mobileBtn {
+		flex-direction: column;
+		justify-content: space-between;
+		height: 18px;
+		width: 2em;
+		display: none;
+		z-index: 2;
+		.line {
+			width: 100%;
+			height: 2px;
+			background: $white;
+		}
+	}
+}
+.decorative__line {
+	width: 100%;
+	height: 0.5em;
+	background: $lightColor;
+}
+.home__background {
+	position: relative;
+	margin: 0 auto;
+	height: 520px;
+	background: url('/img/mainbg.jpg') top;
+	background-size: cover;
+	.delete {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+}
+.home__quotote,
+.quotote {
+	padding: 1em 2.5em;
+	background: $quoteColor;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	font-size: 1em;
+	font-weight: 500;
+	.line {
+		width: 2px;
+		height: 2.8em;
+		background: $white;
+		margin: 0 1em 0 3.5em;
+	}
+}
+.dark {
+	background: $black;
+}
+.end {
+	justify-content: center;
+}
+// enumeration section
+.enumeration {
+	padding: 6em 4.5em;
+	background: $doubleColor;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	.title {
+		position: relative;
+		font-size: 1.8em;
+		margin-bottom: 1.2em;
+	}
+	.introduction,
+	.list {
+		font-size: 1em;
+		width: 400px;
+		p,
+		ul {
+			line-height: 2em;
+		}
+	}
+	.list {
+		text-align: right;
+		.year,
+		li:hover a {
+			color: $lightColor;
+		}
+	}
+	.buttons {
+		margin-top: 1.2em;
+	}
+}
+.navigation__btn {
+	width: 4.5em;
+	height: 2.2em;
+	background: transparent;
+	border: 2px solid $lightColor;
+	color: $lightColor;
+	margin-left: 1.5em;
+	font-weight: 500;
+	&:hover {
+		filter: brightness(1.2);
+	}
+}
+// baner sextion
+.baner {
+	height: 420px;
+	object-fit: cover;
+	background: url('/img/polishbg.jpg') center fixed;
+	&__background {
+		background: $backgroundDimmer;
+		width: 100%;
+		height: 100%;
+		@extend %flexCenter;
+	}
+	.title {
+		position: relative;
+		font-weight: 500;
+		font-size: 4em;
+		&::before {
+			position: absolute;
+			content: 'wojny / konflikty';
+			top: 110%;
+			font-size: 1rem;
+			transform: translateX(120%);
+			color: $lightColor;
+		}
+	}
+	&__background.usa {
+		background: url('/img/usabg.png') center fixed;
+		.title::before {
+			content: 'wars / conflicts';
+		}
+	}
+	.flag {
+		width: 4.7em;
+		margin-left: 1em;
+	}
+}
+// articles section
+.articles {
+	background: $black;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+	.article {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin: 80px 0;
+		flex-wrap: wrap;
+		padding: 0 3em;
+		.description,
+		.table {
+			width: 45%;
+		}
+		.description {
+			width: 45%;
+			text-align: center;
+			margin-right: 2em;
+			.title {
+				position: relative;
+				font-size: 3.3em;
+				margin-bottom: 0.6em;
+			}
+			.text {
+				line-height: 2.2;
+			}
+		}
+		.table {
+			min-width: 600px;
+			padding: 40px;
+			background: $lighterTableColor;
+			border-radius: 12px;
+			&.usa {
+				background: $darkerTableColor;
+			}
+			.row {
+				.title {
+					color: $lightColor;
+					margin-bottom: 15px;
+				}
+				p {
+					line-height: 1.6;
+				}
+				.results {
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					.line {
+						width: 2px;
+						height: 66px;
+						background: $white;
+					}
+				}
+				&:nth-child(2) {
+					margin: 20px 0;
+				}
+			}
+		}
+	}
+}
+// leaders section
+.leaders {
+	background: $quoteColor;
+	padding: 2em 4em;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	.main,
+	.others {
+		width: 45%;
+		text-align: center;
+		img {
+			width: 100%;
+			height: 100%;
+			border-radius: 8px;
+			object-fit: cover;
+			object-position: center;
+			transition: all 0.3s ease;
+		}
+		p,
+		.title {
+			text-align: center;
+			color: $lightColor;
+		}
+	}
+	.main {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		.title {
+			font-size: 1.6em;
+			font-weight: 500;
+		}
+		.card {
+			width: 340px;
+			height: 430px;
+			border: 3px solid $lightColor;
+			border-radius: 8px;
+			margin: 1.5em 0;
+		}
+	}
+	.others {
+		display: flex;
+		align-items: space-evenly;
+		justify-content: space-evenly;
+		.card {
+			width: 170px;
+			height: 215px;
+			background: $black;
+			border: 2px solid $lightColor;
+			border-radius: 8px;
+			margin: 1.1em 0;
+			overflow: hidden;
+			&:hover img {
+				transform: scale(1.3);
+				filter: brightness(1.2);
+			}
+		}
+	}
+}
+// map section
+.map {
+	position: relative;
+	height: 600px;
+	background: url('/img/dfe42173-3a4e-4623-9fa4-3d78227df597.jpeg');
+	background-size: cover;
+	background-position: center;
+}
+.ornament {
+	padding: 0.6em 2em;
+	background: $quoteColor;
+	font-weight: 500;
+	text-align: right;
+	color: $lightColor;
+}
+// other articles section
+.other__articles {
+	padding: 4em;
+	.container {
+		width: 100%;
+		height: 500px;
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		grid-template-rows: repeat(6, 1fr);
+		grid-gap: 0.8em;
+		.main,
+		.long,
+		.box1,
+		.box2 {
+			position: relative;
+			background-position: center;
+			background-size: cover;
+			border-radius: 6px;
+			p {
+				position: absolute;
+				bottom: 0.5em;
+				right: 0.5em;
+				color: $white;
+				font-weight: 600;
+				text-shadow: 1px 2px $black;
+			}
+		}
+		.main {
+			grid-area: 1/1/7/3;
+			background: url('/img/traktatwersalski.jpg');
+			background-size: cover;
+		}
+		.long {
+			grid-area: 1/3/4/7;
+			background: url('/img/rozejmwcamgiene.jpg');
+			background-size: cover;
+		}
+		.box1 {
+			grid-area: 4/3/7/5;
+			background: url('/img/akt5listopada.jpg');
+			background-size: cover;
+		}
+		.box2 {
+			grid-area: 4/5/7/7;
+			background: url('/img/rewolucja\ w\ rosji.jpg');
+			background-size: cover;
+		}
+	}
+}
+// other articles descritpion section
+.other__articles__description {
+	padding: 4em;
+	background: $darkerTableColor;
+	text-align: center;
+	line-height: 1.6em;
+	.title {
+		margin-bottom: 1.6em;
+		color: $lightColor;
+	}
+	.main {
+		margin-bottom: 5em;
+		p {
+			width: 60%;
+			margin: 0 auto;
+		}
+	}
+	.aside {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		.box {
+			min-width: 340px;
+			width: 28%;
+			margin: 1.2em;
+		}
+	}
+}
+// recapitulation section
+.recapitulation {
+	position: relative;
+	background: $quoteColor;
+	display: flex;
+	justify-content: space-between;
+	.container {
+		padding: 4em;
+		width: calc(100% - 90px);
+		height: 100%;
+		.title {
+			font-size: 2.6em;
+			margin-bottom: 0.6em;
+		}
+		.box:nth-child(1) {
+			margin-bottom: 4em;
+			p {
+				line-height: 2em;
+				width: 600px;
+			}
+		}
+		ul {
+			line-height: 2.2em;
+		}
+	}
+	aside {
+		position: absolute;
+		right: 0;
+		height: 100%;
+		background: $darkerTableColor;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-end;
+		padding: 1em;
+		.home__btn {
+			width: 60px;
+			height: 60px;
+			background: $black;
+			border-radius: 6px;
+			margin-top: 0.6em;
+			transition: all 0.1s ease;
+			&:hover {
+				filter: brightness(1.2);
+			}
+			i {
+				font-size: 28px;
+			}
+		}
+		.navigation__btn {
+			margin: 0.6em auto;
+		}
+	}
+}
+// footer section
+footer {
+	padding: 0.1em;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	font-weight: 500;
+	font-size: 1.1em;
+	border-top: 3px solid $lightColor;
+	.nav__logo {
+		transform: scale(0.8);
+	}
+	.year {
+		font-size: 1.4rem;
+		color: $lightColor;
+	}
+}
+@media (max-width: 1244px) {
+	// articles section
+	.articles .article {
+		justify-content: center;
+		margin: 40px 0;
+		.description,
+		.table {
+			width: 80%;
+		}
+		.description {
+			text-align: center;
+			margin-bottom: 2.5em;
+			margin-right: 0;
+		}
+	}
+	// quototes section
+	.quotote {
+		justify-content: center;
+	}
+}
+@media (max-width: 943px) {
+	html {
+		font-size: 13px;
+	}
+	// enumeration section
+	.enumeration {
+		padding: 6em 1.5em;
+	}
+	// articles section
+	.articles .article .description {
+		width: 90%;
+	}
+	// leaders section
+	.leaders {
+		.main,
+		.others {
+			.card {
+				transform: scale(0.9);
+			}
+		}
+		.main .card {
+			margin: 0;
+		}
+	}
+	// other articles section
+	.other__articles .container {
+		.long {
+			grid-area: 1/1/4/7;
+		}
+		.main {
+			grid-area: 4/1/7/3;
+		}
+	}
+}
+@media (max-width: 780px) {
+	// leaders section
+	.leaders {
+		flex-direction: column;
+		.main {
+			width: 100%;
+		}
+	}
+	// recapitulation section
+	.recapitulation {
+		.container {
+			.box:nth-child(1) {
+				p {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 660px) {
+	// nav section
+	.nav {
+		padding: 0.4em 1.5em;
+		&__menu {
+			position: fixed;
+			top: 0;
+			right: -100%;
+			width: 100%;
+			height: 100%;
+			background: $menuColor;
+			display: flex;
+			align-items: flex-start;
+			flex-direction: column;
+			justify-content: center;
+			transition: transform 0.2s ease;
+			li {
+				margin: 2em 0;
+				a {
+					font-size: 2.8em;
+					color: $lightColor;
+				}
+			}
+		}
+		&__mobileBtn {
+			display: flex;
+		}
+		&__menu.active {
+			transform: translateX(-100%);
+		}
+	}
+	// homebackground section
+	.home__background {
+		height: 380px;
+	}
+	// enumeration section
+	.enumeration {
+		padding: 4em 0;
+		flex-direction: column;
+		background: $menuColor;
+		.introduction,
+		.list {
+			width: 100%;
+			text-align: center;
+			.box:nth-child(1) {
+				margin-bottom: 1em;
+			}
+		}
+		.introduction {
+			margin-bottom: 2em;
+		}
+		.navigation__btn {
+			margin: 0 2px;
+		}
+	}
+	// articles section
+	.articles {
+		justify-content: center;
+		.article {
+			padding: 0 1em;
+			.description {
+				font-size: 13px;
+				.title {
+					font-size: 3em;
+				}
+			}
+			.table {
+				width: 100%;
+				min-width: 400px;
+			}
+		}
+	}
+	// quotote sections
+	.quotote,
+	.home__quotote {
+		font-size: 11px;
+	}
+	// map section
+	.map {
+		height: 380px;
+	}
+	// footer section
+	footer {
+		font-size: 1em;
+		padding: 0.4em 1.4em;
+		.year {
+			display: none;
+		}
+		p {
+			text-align: right;
+		}
+	}
+	.other__articles__description .main p {
+		min-width: 350px;
+		text-align: center;
+	}
+	// recapitulation section
+	.recapitulation {
+		aside {
+			background: transparent;
+		}
+		.container {
+			padding: 1em;
+			transform: scale(0.9);
+			.box:nth-child(1) p {
+				width: 100%;
+			}
+		}
+	}
+	// other articles section
+	.other__articles .container {
+		.long {
+			grid-area: 1/1/4/4;
+		}
+		.main {
+			grid-area: 1/4/4/7;
+		}
+		.box1 {
+			grid-area: 4/1/7/4;
+		}
+		.box2 {
+			grid-area: 4/4/7/7;
+		}
+	}
+}
+@media (max-width: 460px) {
+	// baner section
+	.baner {
+		height: 320px;
+		.baner__background {
+			.title {
+				font-size: 3.2em;
+			}
+			.flag {
+				width: 4em;
+			}
+		}
+	}
+	// articles section
+	.articles .article {
+		.description {
+			width: 100%;
+		}
+		.table {
+			min-width: 350px;
+			padding: 1.6em;
+		}
+	}
+	.quotote .line {
+		height: 4em;
+	}
+	// other articles section
+	.other__articles {
+		padding: 4em 2em;
+	}
+	// other articles section
+	.other__articles .container {
+		height: 400px;
+		.long {
+			grid-area: 1/1/4/4;
+		}
+		.main {
+			grid-area: 1/4/4/7;
+		}
+		.box1 {
+			grid-area: 4/1/7/4;
+		}
+		.box2 {
+			grid-area: 4/4/7/7;
+		}
+	}
+	// other articles
+	.other__articles__description {
+		padding: 4em 0.6em;
+		.main {
+			max-width: 350px;
+			margin: 0 auto 2em;
+			p {
+				width: 100%;
+			}
+		}
+	}
+}

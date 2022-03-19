@@ -5,7 +5,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	color: $white;
 	text-decoration: none;
 	outline: none;
@@ -16,6 +16,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	overflow-x: hidden;
 }
 html {
 	scroll-behavior: smooth;
@@ -23,9 +24,12 @@ html {
 	font-size: 17px;
 }
 .nav__mobileBtn,
+.nav__logo,
 .navigation__btn,
 .home__btn,
-.others .card {
+.others .card,
+.other__articles .container > *,
+.table {
 	cursor: pointer;
 }
 .home__background,
@@ -87,15 +91,11 @@ footer {
 				top: 130%;
 				background: $lightColor;
 				transform: scaleX(0);
-				transform-origin: right;
-				transition: transform 0.2s ease-in;
+				transition: transform 0.2s ease;
+				transform-origin: left;
 			}
 			&:hover::before {
 				transform: scaleX(1);
-				transform-origin: left;
-			}
-			a {
-				transition: color 0.1s ease-in;
 			}
 			&:hover a {
 				color: $lightColor;
@@ -141,9 +141,9 @@ footer {
 	justify-content: flex-end;
 	align-items: center;
 	font-size: 1em;
-	font-weight: 500;
+	font-weight: 400;
 	.line {
-		width: 2px;
+		width: 1px;
 		height: 2.8em;
 		background: $white;
 		margin: 0 1em 0 3.5em;
@@ -195,6 +195,7 @@ footer {
 	color: $lightColor;
 	margin-left: 1.5em;
 	font-weight: 500;
+	transition: all 0.1s ease;
 	&:hover {
 		filter: brightness(1.2);
 	}
@@ -212,7 +213,7 @@ footer {
 	}
 	.title {
 		position: relative;
-		font-weight: 500;
+		font-weight: 400;
 		font-size: 4em;
 		&::before {
 			position: absolute;
@@ -232,6 +233,31 @@ footer {
 	.flag {
 		width: 4.7em;
 		margin-left: 1em;
+	}
+}
+// war section
+.war {
+	margin-top: 5em;
+	width: 100%;
+	max-width: 1300px;
+	background: rgba(0, 0, 0, 0.1);
+	display: flex;
+	flex-direction: column;
+	align-items: space-between;
+	padding: 2em;
+	.box {
+		margin-bottom: 1.4em;
+		text-align: justify;
+	}
+	.title {
+		font-size: 1.1em;
+		font-weight: 500;
+		color: $lightColor;
+		margin: 1.5em 0px;
+	}
+	p {
+		font-size: 1em;
+		line-height: 1.4em;
 	}
 }
 // articles section
@@ -267,15 +293,22 @@ footer {
 			}
 		}
 		.table {
+			position: relative;
 			min-width: 600px;
 			padding: 40px;
 			background: $lighterTableColor;
 			border-radius: 12px;
-			&.usa {
+			transition: background 0.4s ease;
+			&.usa,
+			&:hover {
 				background: $darkerTableColor;
 			}
 			.row {
+				&:hover .title {
+					filter: brightness(1.2);
+				}
 				.title {
+					transition: filter 0.2s ease;
 					color: $lightColor;
 					margin-bottom: 15px;
 				}
@@ -287,7 +320,7 @@ footer {
 					align-items: center;
 					justify-content: space-between;
 					.line {
-						width: 2px;
+						width: 1px;
 						height: 66px;
 						background: $white;
 					}
@@ -330,7 +363,7 @@ footer {
 		align-items: center;
 		justify-content: center;
 		.title {
-			font-size: 1.6em;
+			font-size: 1.8em;
 			font-weight: 500;
 		}
 		.card {
@@ -354,7 +387,7 @@ footer {
 			margin: 1.1em 0;
 			overflow: hidden;
 			&:hover img {
-				transform: scale(1.3);
+				transform: scale(1.2);
 				filter: brightness(1.2);
 			}
 		}
@@ -378,6 +411,12 @@ footer {
 // other articles section
 .other__articles {
 	padding: 4em;
+	.title {
+		font-size: 2.6em;
+		font-weight: 500;
+		text-align: center;
+		margin-bottom: 1em;
+	}
 	.container {
 		width: 100%;
 		height: 500px;
@@ -390,9 +429,18 @@ footer {
 		.box1,
 		.box2 {
 			position: relative;
-			background-position: center;
-			background-size: cover;
 			border-radius: 6px;
+			overflow: hidden;
+			&:hover img {
+				transform: scale(1.2);
+			}
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: center;
+				transition: transform 0.3s ease;
+			}
 			p {
 				position: absolute;
 				bottom: 0.5em;
@@ -404,23 +452,15 @@ footer {
 		}
 		.main {
 			grid-area: 1/1/7/3;
-			background: url('/img/traktatwersalski.jpg');
-			background-size: cover;
 		}
 		.long {
 			grid-area: 1/3/4/7;
-			background: url('/img/rozejmwcamgiene.jpg');
-			background-size: cover;
 		}
 		.box1 {
 			grid-area: 4/3/7/5;
-			background: url('/img/akt5listopada.jpg');
-			background-size: cover;
 		}
 		.box2 {
 			grid-area: 4/5/7/7;
-			background: url('/img/rewolucja\ w\ rosji.jpg');
-			background-size: cover;
 		}
 	}
 }
@@ -466,16 +506,21 @@ footer {
 		.title {
 			font-size: 2.6em;
 			margin-bottom: 0.6em;
+			color: $lightColor;
 		}
 		.box:nth-child(1) {
 			margin-bottom: 4em;
 			p {
 				line-height: 2em;
-				width: 600px;
+				width: 720px;
 			}
 		}
 		ul {
 			line-height: 2.2em;
+			li:nth-child(2n) {
+				margin: 1em 0;
+				color: $lightColor;
+			}
 		}
 	}
 	aside {
@@ -498,7 +543,11 @@ footer {
 			&:hover {
 				filter: brightness(1.2);
 			}
+			&:hover i {
+				transform: translateY(-6px);
+			}
 			i {
+				transition: all 0.3s ease;
 				font-size: 28px;
 			}
 		}
@@ -524,6 +573,72 @@ footer {
 		color: $lightColor;
 	}
 }
+//  open scene
+.slider {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: $black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	z-index: 999;
+	pointer-events: none;
+	.circle,
+	.circle .inner {
+		border-radius: 50%;
+		@extend %flexCenter;
+		flex-direction: column;
+	}
+	.circle {
+		position: relative;
+		width: 450px;
+		height: 450px;
+		z-index: 5;
+		.inner {
+			width: 400px;
+			height: 400px;
+			background: $black;
+			z-index: 10;
+			p {
+				font-size: 3em;
+				font-weight: 300;
+				z-index: 999;
+				font-family: 'Raleway', sans-serif;
+				span {
+					color: $lightColor;
+					font-weight: 400;
+				}
+			}
+			.name {
+				margin-top: 20px;
+				font-size: 1em;
+				color: $lightColor;
+			}
+		}
+		.bar {
+			position: absolute;
+			top: 0;
+			width: 51%;
+			height: 100%;
+			background: linear-gradient(45deg, rgb(214, 202, 144), rgb(210, 203, 185));
+			z-index: 8;
+			&__right {
+				right: 0;
+				border-radius: 0 400px 400px 0;
+				transform-origin: top;
+			}
+			&__left {
+				left: 0;
+				border-radius: 400px 0 0 400px;
+				transform-origin: bottom;
+			}
+		}
+	}
+}
 @media (max-width: 1244px) {
 	// articles section
 	.articles .article {
@@ -547,6 +662,7 @@ footer {
 @media (max-width: 943px) {
 	html {
 		font-size: 13px;
+		overflow-x: hidden;
 	}
 	// enumeration section
 	.enumeration {
@@ -577,6 +693,10 @@ footer {
 			grid-area: 4/1/7/3;
 		}
 	}
+	// slider section
+	.slider .circle {
+		transform: scale(0.8);
+	}
 }
 @media (max-width: 780px) {
 	// leaders section
@@ -600,6 +720,7 @@ footer {
 @media (max-width: 660px) {
 	// nav section
 	.nav {
+		position: fixed;
 		padding: 0.4em 1.5em;
 		&__menu {
 			position: fixed;
@@ -631,6 +752,7 @@ footer {
 	// homebackground section
 	.home__background {
 		height: 380px;
+		margin-top: 60px;
 	}
 	// enumeration section
 	.enumeration {
@@ -688,6 +810,9 @@ footer {
 		p {
 			text-align: right;
 		}
+	}
+	.other__articles .title {
+		font-size: 2em;
 	}
 	.other__articles__description .main p {
 		min-width: 350px;
@@ -778,5 +903,8 @@ footer {
 				width: 100%;
 			}
 		}
+	}
+	.slider .circle {
+		transform: scale(0.7);
 	}
 }

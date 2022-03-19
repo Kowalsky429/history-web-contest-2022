@@ -5,40 +5,53 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="author" content="Kacper Kowalski" />
-		<meta name="description" content="Konflikty i wojny 20 wieku, historyczne fakty, bitwy i ciekawostki" />
-		<link rel="shortcut icon" href="./img/icon.png" />
+		<meta name="description" content="Konflikty i Wojny XX wieku, historyczne fakty, bitwy i ciekawostki" />
+		<link rel="shortcut icon" href="./img/logo2.png" />
 		<link rel="stylesheet" href="./styles/style.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
 		<link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
 		<title>Historia XX</title>
 	</head>
 	<body>
+		<div class="slider">
+			<div class="circle">
+				<div class="inner">
+					<p>HISTORIA</p>
+					<p>WIEK <span>XX</span></p>
+					<p class="name">Kacper Kowalski</p>
+				</div>
+				<div class="bar bar__right"></div>
+				<div class="bar bar__left"></div>
+			</div>
+		</div>
 		<div id="HOME"></div>
 		<nav class="nav">
-			<div class="nav__logo">
-				<span class="main__letter">H</span>
-				<div class="second__letters">
-					<span>ISTORIA</span>
-					<span>XX</span>
+			<a href="#HOME">
+				<div class="nav__logo">
+					<span class="main__letter">H</span>
+					<div class="second__letters">
+						<span>ISTORIA</span>
+						<span>XX</span>
+					</div>
 				</div>
-			</div>
+			</a>
 			<div class="nav__menu">
-				<li class="link"><a href="#HOME">HOME</a></li>
-				<li class="link"><a href="#PL">PL</a></li>
-				<li class="link"><a href="#USA">USA</a></li>
-				<li class="link"><a href="#OTHER">INNE</a></li>
+				<li class="link animate animate"><a href="#HOME">HOME</a></li>
+				<li class="link animate animate"><a href="#PL">PL</a></li>
+				<li class="link animate animate"><a href="#USA">USA</a></li>
+				<li class="link animate animate"><a href="#OTHER">INNE</a></li>
 			</div>
-			<div class="nav__mobileBtn">
+			<div class="nav__mobileBtn animate">
 				<div class="line top"></div>
 				<div class="line middle"></div>
 				<div class="line bottom"></div>
 			</div>
 		</nav>
-		<div class="decorative__line"></div>
-		<div class="home__background"></div>
-		<div class="home__quotote">
+		<div class="decorative__line animate"></div>
+		<div class="home__background animate"></div>
+		<div class="home__quotote animate animate">
 			<span class="text">
 				Zwycięzcy piszą historię <br />
 				na nowo
@@ -50,81 +63,109 @@
 			</span>
 		</div>
 		<section class="enumeration" id="PL">
-			<article class="introduction">
+			<article class="introduction animate">
 				<h3 class="title">Wstęp do historii XX wieku</h3>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate neque semper viverra urna egestas aliquam. Nullam
-					neque pharetra tctor pellentesque a amet ligula aliquam nibh. Euismod nulla convallis sem nisi imperdiet facilisis.
-					Vivamus fusce pharetra, ut volutpat gravida.
+					XX wiek to czasy wielu dramatycznych wojen na świecie również dla Rzeczypospolitej która wiele wycierpiała. Był to okres
+					zdobycia i okupacji kraju, ludobójstwa, rozkazu przestrzegania narzuconych praw, czasy cenzury oraz wielostronnej
+					propagandy. Mimo krytycznej sytuacji w kraju Polsce udało się przetrwać i wygrać z wrogimi siłami.
 				</p>
 			</article>
 			<article class="list">
-				<h3 class="title">Spis Wydarzeń</h3>
+				<h3 class="title animate animate">Spis Wydarzeń</h3>
 				<ul>
-					<div class="box">
+					<div class="box animate animate">
 						<p class="year">1900 - 1949</p>
-						<li><a href="#LP">Legiony Polskie</a></li>
-						<li><a href="#BG">Bitwa pod Gorlicami</a></li>
+						<li><a href="#PW">Powstanie Warszawskie</a></li>
+						<li><a href="#PM">Przewrót Majowy</a></li>
 					</div>
-					<div class="box">
+					<div class="box animate animate">
 						<p class="year">1950 - 1999</p>
-						<li><a href="#SB">II Sobór Watykański</a></li>
-						<li><a href="#BR">Bitwa pod Racławicami</a></li>
+						<li><a href="#WP">Wybór Papieża</a></li>
+						<li><a href="#ST">Strajki</a></li>
 					</div>
 				</ul>
-				<div class="buttons">
+				<div class="buttons animate animate">
 					<a href="#USA"><button class="navigation__btn">USA</button></a>
 					<a href="#OTHER"><button class="navigation__btn">INNE</button></a>
 				</div>
 			</article>
 		</section>
-		<section class="baner">
+		<section class="baner animate">
 			<div class="baner__background">
 				<h3 class="title">POLSKA</h3>
 				<img src="/img/polishflag.png" alt="polish flag" class="flag" />
 			</div>
 		</section>
+		<section class="war animate">
+			<div class="box">
+				<p class="title animate">I Wojna Światowa (1914 - 1918)</p>
+				<p class="animate">
+					I Wojna Światowa nazywana wielką wojną to najwiekszy spór zbrojny w Europie od czasu wojen napoleońskich do 1939 roku.
+					Wojna toczyła się pomiędzy dwoma formacjami, z jednej strony państwa centralne: Niemcy, Bułgaria, Austro-Węgry oraz imperium osmańskie (dzisiaj Turcja), z drugiej Ententa: Rosja, Francja, Wielka Brytania, Serbia z Czarnogórą oraz Belgia po niemieckiej agresji. Kraje te przygotowywały się do starcia zbrojnego od dłuższego czasu wystawiając pokaźne ilości armii. W wyniku mobilizacji z 3,7 mln żołnierzy czasu pokoju (1,2 mln państwa centralne, 2,45 mln ententa) armie te powiększyły się do ok. 15,6 mln (6,3 mln państwa centralne, 9,3 mln ententa), z tego 8,4 mln w armii czynnej (3,5 mln państwa centralne, 4,9 mln ententa). W armiach państw zaborczych służyło ponad 500 tys. Polaków. Walczyła też pol. formacja Legiony Polskie. Sztaby generalne walczących państw były nastawione na krótkotrwały konflikt zbrojny który w końcowym rozrachunku pozbawił życia 14 milionów ludzi.
+					Wojna ostatecznie zakończyła się porażką państw centralnych, powstaniem w Europie Środkowej i Południowej licznych państw narodowych oraz likwidacją mocarstw Świętego Przymierza. I Wojna Światowa była też jedną z głównych przyczyn rewolucji lutowej i rewolucji październikowej w Rosji.
+					Pomimo ogromnych strat i wstrząsu wywołanego nimi, wojna ta nie rozwiązała większości konfliktów, co 21 lat później doprowadziło do wybuchu II wojny światowej. I wojna światowa była zderzeniem XX-wiecznej techniki z XIX-wieczną strategią i taktyką. Wybuch I wojny światowej wyznaczył symboliczny koniec wieku XIX oraz koniec hegemonii europejskiej na świecie. Od jej zakończenia coraz większą rolę w stosunkach międzynarodowych zaczęły odgrywać Stany Zjednoczone i utworzony w 1922 r. ZSRR
+				</p>
+			</div>
+			<div class="box">
+				<p class="title animate">II Wojna Światowa (1939 - 1945)</p>
+				<p class="animate">
+					II wojna światowa była największym konfliktem zbrojnym w dziejach świata, toczonym pomiędzy 1939 a 1945 rokiem. Jej przyczyn należy dopatrywać w niedoskonałościach tzw. Ładu Wersalskiego w Europie, jak również dojściu do władzy w wielu krajach skrajnie agresywnych, nastawionych na zbrojne budowanie własnych imperiów ideologii, takich jak nazizm, faszyzm czy komunizm. Bezpośrednio za wybuch wojny odpowiedzialne są hitlerowskie Niemcy, które 1 września 1939 roku uderzyły na Polskę, chcąc w ten sposób zdobyć dominację zbrojną w Europie i zbudować nowe, „aryjskie” imperium.
+					Wkrótce do wojny przyłączyły się inne siły, formując dwa wielkie bloki. W skład sił „Osi” wchodziły Niemcy, Włochy, Japonia, Rumunia, Bułgaria, Węgry i Finlandia. Przeciwko nim stanęła koalicja Aliantów, wśród których początkowo największe znaczenie miały Wielka Brytania i Francja. Stany Zjednoczone zaangażowały się w konflikt dopiero w roku 1941. Oddzielnym przypadkiem jest ZSRR, który do 1941 był formalnie sojusznikiem Niemiec, potem zaś został przez nie zaatakowany i wszedł w skład koalicji antyhitlerowskiej.
+					Walki zbrojne podczas wojny toczyły się na czterech kontynentach i wszystkich oceanach. Wojnę można podzielić na dwa etapy. Lata 1939-1942 to okres wielkich zwycięstw i generalnej przewagi państw Osi, które opanowały znaczną część Azji i Europy. Przełomowym rokiem był przełom 1942 i 1943 roku, kiedy to zarówno Niemcy, jak i Japonia doznały serii porażek, które zepchnęły ich do defensywy. Począwszy od 1944 szala zwycięstwa zdecydowanie przechyliła się na stronę Aliantów, co doprowadziło do rozpadu i kapitulacji państw Osi w roku 1945.
+					Wojna toczona była w sposób niezwykle brutalny, zwłaszcza państwa Osi dopuszczały się wielu okrucieństw na ludności cywilnej okupowanych terytoriów. Na terenach okupowanych Niemcy rozpoczęli akcję masowego mordowania ludności słowiańskiej i żydowskiej (Holokaust). Również ZSRR przeprowadzał czystki na zajętych przez siebie terenach. Walki miały bardzo brutalny charakter.
+					Załamanie się sojuszu „Osi” i zwycięstwo Aliantów utworzyło nowy układ sił na świecie. Miejsce dawnych potęg europejskich zajęły dwa nowe supermocarstwa, zwycięzcy wojny – USA i ZSRR. Już wkrótce rozpoczęły one półjawną rywalizację, która rozpoczęła nowy, niewypowiedziany konflikt – Zimną Wojnę.
+					W wyniku wojny zginęło ponad 60 milionów ludzi, co stanowiło około 3% całkowitej liczby ludności na świecie.
+				</p>
+			</div>
+		</section>
 		<article class="articles">
 			<div class="article">
 				<section class="description">
-					<h2 class="title">Powstanie Warszawskie</h2>
+					<h2 class="title" id="PW">Powstanie Warszawskie</h2>
 					<p class="text">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu, arcu sed massa libero quis libero nunc et nisl.
-						Quisque congue commodo facilisi ut quis orci. Non tincidunt tincidunt sagittis quis nibh viverra arcu. Tortor
-						consectetur ornare eget velit. Gravida accumsan sed dictumst cursus imperdiet et arcu, pulvinar. Porttitor tellus
-						tellus in praesent nec id. Varius commodo sit tellus risus. Nisi sed enim et habitasse amet egestas. Sed id
-						pharetra, in arcu pellentesque cursus. Nisi, eu pharetra, mauris, nam dui tellus in sodales. Neque sem ut quam ac
-						lectus.
+						Akcja zbrojna rozpoczęta 1 sierpnia 1944r o godzinie 17.00 <br />
+						(tzw. godz. "W") zorganizowana przez Armie Krajową na odpowiedz wojsk niemieckich okupująych Warszawe i atakujące
+						pobliskie miejscowości. Dowództwo AK zamierzało na własną ręke odbić stolicę z rąk niemieckich przed wkroczeniem
+						Armii Czerwonej licząc na wzmocnienie pozycji międzynarodowej rządu Rzeczypospolitej na uchodźstwie oraz
+						powstrzymaniu podporządkowywania i sowietyzacji Polski przez Stalina. Akcja w końcowym rozrachunku nie odniosła
+						sukcesu. Głównymi przyczynami klęski była znacząca przewaga liczebna wojsk Niemieckich oraz braki w uzbrojeniu
+						powstańców. Powstanie Warszawskie trwalo 63dni, to najwieksza bitwa stoczona przez struktuty panstwa podziemnego
+						podczas II wojny swiatowej.
 					</p>
 				</section>
 				<section class="table">
 					<div class="row">
 						<h3 class="title">Przyczyna</h3>
+						<p>Dążenie do odbicia okupowanej Warszawy z rąk wojsk niemieckich przez Armie Krajową.</p>
+					</div>
+					<div class="row">
+						<h3 class="title">Skutek</h3>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, leo nisl magna lacinia quisque est at turpis
-							molestie.
+							Zniszczenie większości zabudowy lewobrzeżnej Warszawy, w tym setki bezcennych zabytków oraz obiektów o dużej
+							wartości kulturalnej i duchowej. Pokazanie wrogu i całemu światu nieuległosci ze strony obywateli polskich nawet
+							w sytuacjach z poczatku przegranych.
 						</p>
 					</div>
 					<div class="row">
-						<h3 class="title">Armia</h3>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacus magna euismod vulputate suspendisse, ipsum
-							dolor sit amet, consectetur adipiscing elit. In lorem ipsum de be lonus areno vulo ren rom werev
-						</p>
-					</div>
-					<div class="row">
-						<h3 class="title">Rezultat</h3>
+						<h3 class="title">Ofiary</h3>
 						<div class="results">
 							<div class="results__left">
-								<p class="death">1260 Zmarłych</p>
-								<p class="injured">430 Rannych</p>
-								<p class="lived">XXX</p>
+								<p class="death">
+									16 tyś zabitych <br />
+									powstańców
+								</p>
+								<p class="injured">25 tyś rannych</p>
+								<p class="lived">180 tyś. ofiar cyw.</p>
 							</div>
 							<div class="line"></div>
 							<div class="results__right">
-								<p class="death">2049 Zmarłych</p>
-								<p class="injured">320 Rannych</p>
-								<p class="lived">YYY</p>
+								<p class="death">
+									10 tyś. zabitych <br />
+									hitlerowców
+								</p>
+								<p class="injured">9 tyś rannych</p>
+								<p class="lived">7 tyś zaginionych</p>
 							</div>
 						</div>
 					</div>
@@ -132,51 +173,36 @@
 			</div>
 			<div class="article" class="secondary">
 				<section class="description">
-					<h2 class="title">Podział II RP</h2>
+					<h2 class="title" id="PM">Przewrót Majowy</h2>
 					<p class="text">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu, arcu sed massa libero quis libero nunc et nisl.
-						Quisque congue commodo facilisi ut quis orci. Non tincidunt tincidunt sagittis quis nibh viverra arcu. Tortor
-						consectetur ornare eget velit. Gravida accumsan sed dictumst cursus imperdiet et arcu, pulvinar. Porttitor tellus
-						tellus in praesent nec id. Varius commodo sit tellus risus. Nisi sed enim et habitasse amet egestas. Sed id
-						pharetra, in arcu pellentesque cursus. Nisi, eu pharetra, mauris, nam dui tellus in sodales. Neque sem ut quam ac
-						lectus.
+						Wojskowy zamach stanu dokonany 12-14 maja 1926r pod kierownictwem Józefa Piłsudskiego w Warszawie. Powodem dokonania
+						akcji była stale pogarszająca się sytuacja gospodarczo-polityczna w kraju (traktaty lokarneńskie 1925, zachwianie
+						waluty, niestałość rządów), seria kryzysów gabinetowych oraz chęć wzmocnienia władzy wykonawczej. Do akcji
+						Piłsudskiego dołaczyli się jego zwolennicy ze Strzelca, popierały go również stronnictwa lewicy parlamentarnej:
+						Stronictwo Chłopskie, PSL "Wyzwolenie", PPS, Stronictwo Chłopskie. W ostatecznym rozrachunku zwyciężyły oddziały
+						Józefa Piłsudskiego co skutkowało objęciem władzy przez obóz sanacyjny
 					</p>
 				</section>
 				<section class="table">
 					<div class="row">
 						<h3 class="title">Przyczyna</h3>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, leo nisl magna lacinia quisque est at turpis
-							molestie.
-						</p>
+						<p>Pogarszająca się sytuacja polityczna i gospodarcza kraju oraz seria kryzysów gabinetowych w latach 1925-1926.</p>
 					</div>
 					<div class="row">
-						<h3 class="title">Armia</h3>
+						<h3 class="title">Przebieg</h3>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacus magna euismod vulputate suspendisse, ipsum
-							dolor sit amet, consectetur adipiscing elit. In lorem ipsum de be lonus areno vulo ren rom werev
+							Zbrojny zamach stanu przez marszałka Józefa Piłsudskiego w czasie którego zgineło po obu stronach łącznie 379
+							osób (215 żołnierzy i 164 osób cywilnych), a około 1000 osób zostało rannych podczas tego zdarzenia.
 						</p>
 					</div>
 					<div class="row">
 						<h3 class="title">Rezultat</h3>
-						<div class="results">
-							<div class="results__left">
-								<p class="death">1260 Zmarłych</p>
-								<p class="injured">430 Rannych</p>
-								<p class="lived">XXX</p>
-							</div>
-							<div class="line"></div>
-							<div class="results__right">
-								<p class="death">2049 Zmarłych</p>
-								<p class="injured">320 Rannych</p>
-								<p class="lived">YYY</p>
-							</div>
-						</div>
+						<p>Przjęcie kontroli nad Warszawą przez Józefa Piłsudskiego 14 maja 1926 roku.</p>
 					</div>
 				</section>
 			</div>
 		</article>
-		<div class="quotote">
+		<div class="quotote animate animate">
 			<span class="text">
 				Kto nie rozumie historii, jest skazany na jej powtarzanie. <br />
 				A kiedy historia się powtarza, to stawka jest podwójna.
@@ -190,98 +216,75 @@
 		<article class="articles">
 			<div class="article">
 				<section class="description">
-					<h2 class="title">Wybór Papieża</h2>
+					<h2 class="title" id="WP">Wybór Papieża</h2>
 					<p class="text">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu, arcu sed massa libero quis libero nunc et nisl.
-						Quisque congue commodo facilisi ut quis orci. Non tincidunt tincidunt sagittis quis nibh viverra arcu. Tortor
-						consectetur ornare eget velit. Gravida accumsan sed dictumst cursus imperdiet et arcu, pulvinar. Porttitor tellus
-						tellus in praesent nec id. Varius commodo sit tellus risus. Nisi sed enim et habitasse amet egestas. Sed id
-						pharetra, in arcu pellentesque cursus. Nisi, eu pharetra, mauris, nam dui tellus in sodales. Neque sem ut quam ac
-						lectus.
+						16 października 1978 roku na konklawe zwołanym po śmierci Jana Pawła I, na papieża został wybrany metropolita
+						krakowski Karol Wojtyła który przyjął imię Jan Paweł II. Za główny cel papiestwa przyjał ustanowienie kosćiołu w
+						sercu nowego sojuszu religijnego wielu wyznan, walkę z władzą komunistyczna, rozgłaszanie słowa bożego na całym
+						świecie. Jan Paweł II uwielbiał podróżować oraz chodzić po górach gdzie mógł rozmyślać nad róznymi sprawami. Podczas
+						swojej posługi papieskiej odwiedził 129 państw aby zbudować relację miedzy narodami i religiami. 13 maja 1981 roku o
+						godz. 17:17 na Placu św. Piotra w Rzymie podczas audiencji generalnej papież został postrzelony trzykrotnie przez
+						tureckiego zamachowca Mehmet'a Ali Agca. Przyczyna zamachu nie jest ustalona. Zmarł 2 kwietnia 2005 roku a 9 lat
+						pózniej został kanonizowany.
 					</p>
 				</section>
 				<section class="table">
 					<div class="row">
 						<h3 class="title">Przyczyna</h3>
+						<p>Śmierć papieża Jana Pawła I 28 września 1978 roku.</p>
+					</div>
+					<div class="row">
+						<h3 class="title">Skutek</h3>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, leo nisl magna lacinia quisque est at turpis
-							molestie.
+							Transformacja kościoła która łączy osoby różnej wiary religijnej, poprawa relacji Kościoła katolickiego z
+							judaizmem, islamem, z Kościołem prawosławnym oraz Wspólnotą anglikańską, walka z władzą komunistyczną,
+							polepszenie relacji pomiędzy róznymi religiami i narodami.
 						</p>
 					</div>
 					<div class="row">
-						<h3 class="title">Armia</h3>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacus magna euismod vulputate suspendisse, ipsum
-							dolor sit amet, consectetur adipiscing elit. In lorem ipsum de be lonus areno vulo ren rom werev
-						</p>
-					</div>
-					<div class="row">
-						<h3 class="title">Rezultat</h3>
-						<div class="results">
-							<div class="results__left">
-								<p class="death">1260 Zmarłych</p>
-								<p class="injured">430 Rannych</p>
-								<p class="lived">XXX</p>
-							</div>
-							<div class="line"></div>
-							<div class="results__right">
-								<p class="death">2049 Zmarłych</p>
-								<p class="injured">320 Rannych</p>
-								<p class="lived">YYY</p>
-							</div>
-						</div>
+						<h3 class="title">Śmierć</h3>
+						<p>Papież Jan Paweł Drugi zmarł 2 kwietnia 2005 roku o godzinie 21:37 w Pałacu Apostolskim w Watykanie</p>
 					</div>
 				</section>
 			</div>
 			<div class="article" class="secondary">
 				<section class="description">
-					<h2 class="title">Strajki Górnicze</h2>
+					<h2 class="title" id="ST">Strajki</h2>
 					<p class="text">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu, arcu sed massa libero quis libero nunc et nisl.
-						Quisque congue commodo facilisi ut quis orci. Non tincidunt tincidunt sagittis quis nibh viverra arcu. Tortor
-						consectetur ornare eget velit. Gravida accumsan sed dictumst cursus imperdiet et arcu, pulvinar. Porttitor tellus
-						tellus in praesent nec id. Varius commodo sit tellus risus. Nisi sed enim et habitasse amet egestas. Sed id
-						pharetra, in arcu pellentesque cursus. Nisi, eu pharetra, mauris, nam dui tellus in sodales. Neque sem ut quam ac
-						lectus.
+						Fala strajków polskich robotnikow w zakładach i przedsiębiorstwach wiosną i latem 1988 roku. Były to próby
+						porozumienia się z władzami komunistycznymi w czasie pogłębiającego się kryzysu gospodarczego, podwyżki cen i braku
+						żywności oraz ograniczaniu wolności przez władze komunistyczne. Strajk w Stoczni Gdańskiej to jedno z
+						najważniejszych wydarzeń rozpoczętych przez Wolne Związki Zawodowe jako wyraz sprzeciwu zwolnienia szanowanej Anny
+						Walentynowicz która przepracowała w stoczni 30 lat. Protest w jej obronie zorganizowali działacze WZZ, pracownicy
+						zakładu oraz Lech Wałęsa który był założycielem Solidarnośći czyli niezależnego samorządu związku zawodowego będącym
+						masowym oporem przeciw rządom komunistycznym. Łączna liczba strajków wynosiła ok. 50
 					</p>
 				</section>
 				<section class="table">
 					<div class="row">
 						<h3 class="title">Przyczyna</h3>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, leo nisl magna lacinia quisque est at turpis
-							molestie.
+							Kryzys gospodarczy powodujący podwyższeniem cen za żywność, zmniejszenie płac robotnikom, wrogie działania
+							partii komunistycznej wobec społeczeństwa (cenzura, brak wolności itp.).
 						</p>
 					</div>
 					<div class="row">
-						<h3 class="title">Armia</h3>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacus magna euismod vulputate suspendisse, ipsum
-							dolor sit amet, consectetur adipiscing elit. In lorem ipsum de be lonus areno vulo ren rom werev
-						</p>
+						<h3 class="title">Skutek</h3>
+						<p>Protest i strajk robotników bedących przeciwnym zmianom wprowadzonym przez władze komunistyczne</p>
 					</div>
 					<div class="row">
 						<h3 class="title">Rezultat</h3>
-						<div class="results">
-							<div class="results__left">
-								<p class="death">1260 Zmarłych</p>
-								<p class="injured">430 Rannych</p>
-								<p class="lived">XXX</p>
-							</div>
-							<div class="line"></div>
-							<div class="results__right">
-								<p class="death">2049 Zmarłych</p>
-								<p class="injured">320 Rannych</p>
-								<p class="lived">YYY</p>
-							</div>
-						</div>
+						<p>
+							Powstanie „Solidarności” która zapoczątkowała dekadę przełomowych zmian w historii, których efektem był upadek
+							komunizmu w Europie środkowo-wschodniej.
+						</p>
 					</div>
 				</section>
 			</div>
 		</article>
-		<article class="leaders">
-			<section class="main">
-				<h3 class="title">Polscy Dowódcy</h3>
+		<article class="leaders animate">
+			<section class="main animate animate">
+				<h3 class="title">Polscy bohaterowie</h3>
 				<div class="card">
 					<img src="./img/jozefpilsudski.jpg" />
 				</div>
@@ -289,15 +292,15 @@
 			</section>
 			<section class="others">
 				<div class="box">
-					<div class="card">
-						<img src="./img/ignacymoscicki.jpg" />
+					<div class="card animate animate">
+						<img src="./img/edwardsmiglyy.jpg" />
 					</div>
 					<p>
-						Ignacy Mościcki <br />
+						Edward Śmigły-Rydz <br />
 						(1867 - 1946)
 					</p>
-					<div class="card">
-						<img src="./img/edwardsmigly.jpeg" />
+					<div class="card animate animate">
+						<img src="./img/1200px-Wladyslaw_Sikorski_2.jpg" />
 					</div>
 					<p>
 						Władysław Sikorski <br />
@@ -305,24 +308,24 @@
 					</p>
 				</div>
 				<div class="box">
-					<div class="card">
+					<div class="card animate animate">
+						<img src="./img/ignacymoscicki.jpg" />
+					</div>
+					<p>
+						Ignacy Mościcki <br />
+						(1867 - 1946)
+					</p>
+					<div class="card animate animate">
 						<img src="./img/Witos.jpg" />
 					</div>
 					<p>
 						Wincenty Witos <br />
 						(1874-1945)
 					</p>
-					<div class="card">
-						<img src="./img/1200px-Wladyslaw_Sikorski_2.jpg" />
-					</div>
-					<p>
-						Edward Śmigły-Rydz <br />
-						(1867 - 1946)
-					</p>
 				</div>
 			</section>
 		</article>
-		<div class="quotote dark">
+		<div class="quotote dark animate">
 			<span class="text"> Wielka historia to zbiór małych historii. </span>
 			<div class="line"></div>
 			<span class="author">
@@ -331,36 +334,35 @@
 			</span>
 		</div>
 		<section class="enumeration" id="USA">
-			<article class="introduction">
-				<h3 class="title">Wstęp do historii XX wieku</h3>
+			<article class="introduction animate">
+				<h3 class="title">Historia USA XX Wieku</h3>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate neque semper viverra urna egestas aliquam. Nullam
-					neque pharetra tctor pellentesque a amet ligula aliquam nibh. Euismod nulla convallis sem nisi imperdiet facilisis.
-					Vivamus fusce pharetra, ut volutpat gravida.
+					Wydarzenia XX wieku szczegółowo pokazują pozycje Stanów Zjednoczonych na arenie międzynarodowej.
+					Jest to państwo które wielokrotnie miało wpływ na przebieg wydarzeń, ukazało swą potęge oraz nieustępliwość wobec wrogich sił. Wojna z Hiszpanią uczyniła z nich mocarstwo nie tylko na półkuli zachodniej, lecz również w rejonie Pacyfiku i Azji Wschodniej.
 				</p>
 			</article>
 			<article class="list">
-				<h3 class="title">Spis Wydarzeń</h3>
+				<h3 class="title animate">Spis Wydarzeń</h3>
 				<ul>
-					<div class="box">
+					<div class="box animate">
 						<p class="year">1900 - 1949</p>
-						<li><a href="#LP">Legiony Polskie</a></li>
-						<li><a href="#BG">Bitwa pod Gorlicami</a></li>
+						<li><a href="#WB">Wojna Bananowa</a></li>
+						<li><a href="#WK">Wojna Koreańska</a></li>
 					</div>
-					<div class="box">
+					<div class="box animate">
 						<p class="year">1950 - 1999</p>
-						<li><a href="#SB">II Sobór Watykański</a></li>
-						<li><a href="#BR">Bitwa pod Racławicami</a></li>
+						<li><a href="#WW">Wojna Wietnamska</a></li>
+						<li><a href="#WZ">Wojna w Zatoce Perskiej</a></li>
 					</div>
 				</ul>
-				<div class="buttons">
+				<div class="buttons animate">
 					<a href="#PL"><button class="navigation__btn">PL</button></a>
 					<a href="#OTHER"><button class="navigation__btn">INNE</button></a>
 				</div>
 			</article>
 		</section>
 		<section class="baner">
-			<div class="baner__background usa">
+			<div class="baner__background usa animate">
 				<h3 class="title">USA</h3>
 				<img src="/img/USA-FLAGA.gif" alt="polish flag" class="flag" />
 			</div>
@@ -368,96 +370,75 @@
 		<article class="articles">
 			<div class="article">
 				<section class="description">
-					<h2 class="title">Legiony Polskie</h2>
+					<h2 class="title" id="WB">Wojna bananowa</h2>
 					<p class="text">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu, arcu sed massa libero quis libero nunc et nisl.
-						Quisque congue commodo facilisi ut quis orci. Non tincidunt tincidunt sagittis quis nibh viverra arcu. Tortor
-						consectetur ornare eget velit. Gravida accumsan sed dictumst cursus imperdiet et arcu, pulvinar. Porttitor tellus
-						tellus in praesent nec id. Varius commodo sit tellus risus. Nisi sed enim et habitasse amet egestas. Sed id
-						pharetra, in arcu pellentesque cursus. Nisi, eu pharetra, mauris, nam dui tellus in sodales. Neque sem ut quam ac
-						lectus.
+						Interwencje Stanów Zjednoczonych w Ameryce Środkowej i na Karaibach. Przyczyny wojen bananowych były bardzo różne
+						zaczynając od ekonomicznych a koncząc na politycznych. Termin „Wojny Bananowe” wziął się od działalności
+						amerykańskiej firmy "United Fruit Company", która wykorzystując kontrolę USA nad krajami Ameryki Środkowej i
+						Karaibów wzbogaciła się poprzez przejęcie wielu plantacji bananów, trzciny cukrowej i tytoniu. Wojny bananowe trwały
+						od zakończenia konfliktu amerykańsko-hiszpańskiego w 1898 i były reperkusorem pokoju paryskiego, w wyniku którego
+						Kuba i Portoryko znalazły się pod amerykańską kontrolą. Datą końca wojen bananowych uważa się za rok 1934, w którym
+						wycofano wojska amerykańskie z Haiti, a prezydent Stanów Zjednoczonych Franklin Delano Roosevelt ogłosił doktrynę
+						dobrego sąsiedztwa.
 					</p>
 				</section>
 				<section class="table usa">
 					<div class="row">
 						<h3 class="title">Przyczyna</h3>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, leo nisl magna lacinia quisque est at turpis
-							molestie.
+							Wojna bananowa miała uzasadnienie polityczne i ekonomiczne. Z przyczyn politycznych uzasadnia się plan
+							poszerzenia amerykańskiej strefy wpływów i utrzymania władzy nad Kanałem Panamskim co sprzyjało nad handlem
+							morkim pólkuli zachodniej oraz polepszeniem obronnosci kraju.
 						</p>
 					</div>
 					<div class="row">
-						<h3 class="title">Armia</h3>
+						<h3 class="title">Obszar Działań</h3>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacus magna euismod vulputate suspendisse, ipsum
-							dolor sit amet, consectetur adipiscing elit. In lorem ipsum de be lonus areno vulo ren rom werev
+							Obszarem działan podczas wojny bananowej zaliczają sie tereny takie jak: Panama, Kuba, Nikaragua, Haiti,
+							Dominikana, Honduras i Dominikana.
 						</p>
 					</div>
 					<div class="row">
-						<h3 class="title">Rezultat</h3>
-						<div class="results">
-							<div class="results__left">
-								<p class="death">1260 Zmarłych</p>
-								<p class="injured">430 Rannych</p>
-								<p class="lived">XXX</p>
-							</div>
-							<div class="line"></div>
-							<div class="results__right">
-								<p class="death">2049 Zmarłych</p>
-								<p class="injured">320 Rannych</p>
-								<p class="lived">YYY</p>
-							</div>
-						</div>
+						<h3 class="title">Czas Trwania</h3>
+						<p>1898 r. – 1934 r.</p>
 					</div>
 				</section>
 			</div>
 			<div class="article" class="secondary">
 				<section class="description">
-					<h2 class="title">Bitwa pod Gorlicami</h2>
+					<h2 class="title" id="WK">Wojna koreańska</h2>
 					<p class="text">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu, arcu sed massa libero quis libero nunc et nisl.
-						Quisque congue commodo facilisi ut quis orci. Non tincidunt tincidunt sagittis quis nibh viverra arcu. Tortor
-						consectetur ornare eget velit. Gravida accumsan sed dictumst cursus imperdiet et arcu, pulvinar. Porttitor tellus
-						tellus in praesent nec id. Varius commodo sit tellus risus. Nisi sed enim et habitasse amet egestas. Sed id
-						pharetra, in arcu pellentesque cursus. Nisi, eu pharetra, mauris, nam dui tellus in sodales. Neque sem ut quam ac
-						lectus.
+						Wojna przebiegająca na teretorium Półwyspu Koreańskiego pomiedzy siłami komunistycznymi KRLD wraz z sojuszem wojsk
+						Chińskiej Republiki Ludowej a ONZ wspierającymi wojska Republiki Korei. 2 września 1945 powierzono nadzór nad Koreą
+						dwóm mocarstwom: Rosji i USA. Rosja nadzorowała część północną natomiast USA południową. W sierpniu 1948 roku w
+						Seulu pojawiły się rozmowy na temat zjednoczenia Korei w jedno pańtwo natomiast nic nie wynikło przez dążenie Mokswy
+						do zapewnienia sobie wpływów w okupowanej częsci kraju. Pod koniec tego roku jednak Rosja się wycofała a pół roku
+						pózniej Stany Zjednoczone. Opuszczenie Półwyspu Koreańskiego zachęciło Kim Ir Sena do przeprowadzenia ataku którego
+						celem było włączenie ziem południowokoreańskich do KRLD. Armia południowokoreańska była słaba i nieliczna w
+						porównaniu do sił komunistycznych która w dodatku dysponowała poparciem ze strony ZSRR.
 					</p>
 				</section>
 				<section class="table usa">
 					<div class="row">
 						<h3 class="title">Przyczyna</h3>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, leo nisl magna lacinia quisque est at turpis
-							molestie.
-						</p>
+						<p>Zbrojna agresja Korei Północnej na Koreę Południową, ekspansja komunizmu</p>
 					</div>
 					<div class="row">
 						<h3 class="title">Armia</h3>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacus magna euismod vulputate suspendisse, ipsum
-							dolor sit amet, consectetur adipiscing elit. In lorem ipsum de be lonus areno vulo ren rom werev
+							Aktualne szacunki historyków zakładają straty armii Republiki Korei (Korea Południowa) – 415 tys. żołnierzy
+							zabitych i zmarłych w niewoli i 429 tys. rannych, Koreańskiej Armii Ludowej – 500–600 tys. zabitych i drugie
+							tyle rannych, a ludności cywilnej – około miliona ludzi zabitych i rannych.
 						</p>
 					</div>
 					<div class="row">
 						<h3 class="title">Rezultat</h3>
-						<div class="results">
-							<div class="results__left">
-								<p class="death">1260 Zmarłych</p>
-								<p class="injured">430 Rannych</p>
-								<p class="lived">XXX</p>
-							</div>
-							<div class="line"></div>
-							<div class="results__right">
-								<p class="death">2049 Zmarłych</p>
-								<p class="injured">320 Rannych</p>
-								<p class="lived">YYY</p>
-							</div>
-						</div>
+						<p>Zawieszenie broni, utworzenie strefy demarkacyjnej pomiędzy Koreą Północną a Południową</p>
 					</div>
 				</section>
 			</div>
 		</article>
-		<div class="quotote">
+		<div class="quotote animate">
 			<span class="text">
 				Szczęśliwe narody nie mają historii - to stara prawda. Ale nie mają również sztuki, która rodzi się w walce, w cierpieniu, w
 				buncie.
@@ -471,233 +452,231 @@
 		<article class="articles">
 			<div class="article">
 				<section class="description">
-					<h2 class="title">Legiony Polskie</h2>
+					<h2 class="title" id="WW">Wojna wietnamska</h2>
 					<p class="text">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu, arcu sed massa libero quis libero nunc et nisl.
-						Quisque congue commodo facilisi ut quis orci. Non tincidunt tincidunt sagittis quis nibh viverra arcu. Tortor
-						consectetur ornare eget velit. Gravida accumsan sed dictumst cursus imperdiet et arcu, pulvinar. Porttitor tellus
-						tellus in praesent nec id. Varius commodo sit tellus risus. Nisi sed enim et habitasse amet egestas. Sed id
-						pharetra, in arcu pellentesque cursus. Nisi, eu pharetra, mauris, nam dui tellus in sodales. Neque sem ut quam ac
-						lectus.
+						Wojna w Wietnamie (zwana też drugą wojną indochińską, a w Wietnamie wojną amerykańską) była działaniem militarnym na
+						Półwyspie Indochińskim, w którym uczestniczyły Wietnam Południowy (wspierany przez Amerykanów) oraz Wietnam Północny
+						(wspierany przez ZSRR). Był to jeden z najdłuższych i najkrwawszych konfliktów, jakich doświadczył świat po drugiej
+						wojnie światowej. Usprawiedliwieniem do oficjalnego zaangażowania się w wojnę był atak wietnamskich kutrów
+						torpedowych na amerykańskie okręty w Zatoce Tonkijskiej w wyniku czego amerykanie zaczęli wysyłać na półwysep
+						wietnamski coraz większe siły, jak równiez oddziały i sprzęt. W roku 1973 USA zostalo zmuszone do uznania swojej
+						porażki i pozostawienia sojusznika. W 1973 w Paryżu podpisano pokój który miał gwarantować Południu niezależność,
+						jednakże dwa lata później Wietnam Południowy został zaatakowany i zajęty przez komunistów.
 					</p>
 				</section>
 				<section class="table usa">
 					<div class="row">
 						<h3 class="title">Przyczyna</h3>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, leo nisl magna lacinia quisque est at turpis
-							molestie.
+							Rywalizacja pomiędzy Stanami Zjednoczonymi a ZSRR w ramach zimnej wojny oraz niewykonanie przez Wietnam
+							Południowy postanowień konferencji genewskiej w Genewie w Szwajcarii 26 kwietnia – 20 lipca 1954 roku.
 						</p>
 					</div>
 					<div class="row">
 						<h3 class="title">Armia</h3>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacus magna euismod vulputate suspendisse, ipsum
-							dolor sit amet, consectetur adipiscing elit. In lorem ipsum de be lonus areno vulo ren rom werev
-						</p>
+						<p>W wojnie w Wietnamie (1955-1975) śmierć poniosło 58 220 amerykańskich żołnierzy.</p>
 					</div>
 					<div class="row">
 						<h3 class="title">Rezultat</h3>
-						<div class="results">
-							<div class="results__left">
-								<p class="death">1260 Zmarłych</p>
-								<p class="injured">430 Rannych</p>
-								<p class="lived">XXX</p>
-							</div>
-							<div class="line"></div>
-							<div class="results__right">
-								<p class="death">2049 Zmarłych</p>
-								<p class="injured">320 Rannych</p>
-								<p class="lived">YYY</p>
-							</div>
-						</div>
+						<p>
+							Zwycięstwo Wietnamu Północnego, ewakuacja wojsk amerykańskich z Półwyspu Indochińskiego, kapitulacja Wietnamu
+							Południoweg, zjednoczenie Wietnamu, przejęcie władzy w Laosie przez Pathet Lao oraz Czerwonych Khmerów w
+							Kambodży
+						</p>
 					</div>
 				</section>
 			</div>
 			<div class="article" class="secondary">
 				<section class="description">
-					<h2 class="title">Bitwa pod Gorlicami</h2>
+					<h2 class="title" id="WZ">Wojna w Zatoce Perskiej</h2>
 					<p class="text">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu, arcu sed massa libero quis libero nunc et nisl.
-						Quisque congue commodo facilisi ut quis orci. Non tincidunt tincidunt sagittis quis nibh viverra arcu. Tortor
-						consectetur ornare eget velit. Gravida accumsan sed dictumst cursus imperdiet et arcu, pulvinar. Porttitor tellus
-						tellus in praesent nec id. Varius commodo sit tellus risus. Nisi sed enim et habitasse amet egestas. Sed id
-						pharetra, in arcu pellentesque cursus. Nisi, eu pharetra, mauris, nam dui tellus in sodales. Neque sem ut quam ac
-						lectus.
+						Konflikt zbrojny rozpoczęty 2 sierpinia 1990 roku przez wojska Iraku atakujące Kuwejt. Przyczyn ataku jest kilka jak kryzys gospodarczy Iraku, rozrost sił wojska czy wrogo nastawiony Ruhollah Chomeini który chciał rozszerzyć islam po kolejne kraje arabskie. Jednak głównym powodów ofensywy Iraku był dostęp do złóż ropy naftowej, które po Arabii Saudyjskiej są największymi złożami surowca na świecie. Działania wojenne obejmowały teren o powierzchni około 7000 km². 
+						Z powodu niszczenia szyb naftowych i przedostania się do środowiska substancji ropopochodnych, został skażony około 1 000 km² pustyni.
+						Wojna zakończyła się wyzwoleniem Kuwejtu przez międzynarodową koalicję przeprowadzoną przez Amerykę wiosną 1991 roku, w ramach operacji wojskowej Pustynna Burza
+						W operacji brało udział ponad 55 tysięcy amerykańskich żołnierzy. 
+						Od tamtego czasu USA kilkakrotnie przeprowadzało naloty na Irak, stacjonowały wojska w regionie oraz patrolowały strefy zakazane dla lotów na północy i południu Iraku.
 					</p>
 				</section>
 				<section class="table usa">
 					<div class="row">
 						<h3 class="title">Przyczyna</h3>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, leo nisl magna lacinia quisque est at turpis
-							molestie.
+							Przczyną konfliktu były dyrektywy terytorialne i ekonomiczne Iraku wobec Kuwejtu
+							zaatakowanego w celu zdobycia kontroli nad bogatymi złożami ropy naftowej.
 						</p>
 					</div>
 					<div class="row">
 						<h3 class="title">Armia</h3>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacus magna euismod vulputate suspendisse, ipsum
-							dolor sit amet, consectetur adipiscing elit. In lorem ipsum de be lonus areno vulo ren rom werev
-						</p>
+							W wyniku konfliktu w Zatoce Perskiej po stronie Kuwejskiej zgineło 1200 osób, w Koalcji do 392 zmarłych i 776 rannych a straty przeciwnika wyniosły od 20 - 35 tyś zmarłych.
 					</div>
 					<div class="row">
 						<h3 class="title">Rezultat</h3>
-						<div class="results">
-							<div class="results__left">
-								<p class="death">1260 Zmarłych</p>
-								<p class="injured">430 Rannych</p>
-								<p class="lived">XXX</p>
-							</div>
-							<div class="line"></div>
-							<div class="results__right">
-								<p class="death">2049 Zmarłych</p>
-								<p class="injured">320 Rannych</p>
-								<p class="lived">YYY</p>
-							</div>
+						<p>Zwycięstwo koalicji antyirackiej oraz wyzwolenie Kuwejtu</p>
 						</div>
 					</div>
 				</section>
 			</div>
 		</article>
-		<article class="leaders">
-			<section class="main">
-				<h3 class="title">Amerykańscy Dowódcy</h3>
+		<article class="leaders animate">
+			<section class="main animate">
+				<h3 class="title">
+					Amerykańscy <br />
+					bohaterowie
+				</h3>
 				<div class="card">
-					<img src="./img/jozefpilsudski.jpg" />
+					<img src="./img/ronald reagan.jpg" />
 				</div>
-				<p>Józef Piłsudzki (1867 - 1935)</p>
+				<p>Ronald Reagan (1911 - 2004)</p>
 			</section>
 			<section class="others">
 				<div class="box">
-					<div class="card">
-						<img src="./img/ignacymoscicki.jpg" />
+					<div class="card animate">
+						<img src="./img/john kennedy.jpg" />
 					</div>
 					<p>
-						Ignacy Mościcki <br />
-						(1867 - 1946)
+						John F. Kennedy <br />
+						(1917 - 1963)
 					</p>
-					<div class="card">
-						<img src="./img/edwardsmigly.jpeg" />
+					<div class="card animate">
+						<img src="./img/franklin roosevelt.jpg" />
 					</div>
 					<p>
-						Edward Śmigły-Rydz <br />
-						(1867 - 1946)
+						Franklin Roosevelt <br />
+						(1882 - 1945)
 					</p>
 				</div>
 				<div class="box">
-					<div class="card">
-						<img src="./img/Witos.jpg" />
+					<div class="card animate">
+						<img src="./img/martin luther.jpg" />
 					</div>
 					<p>
-						Ignacy Mościcki <br />
-						(1867 - 1946)
+						Martin Luther King <br />
+						(1929 - 1968)
 					</p>
-					<div class="card">
-						<img src="./img/1200px-Wladyslaw_Sikorski_2.jpg" />
+					<div class="card animate">
+						<img src="./img/margaret sanger.jpg" />
 					</div>
 					<p>
-						Edward Śmigły-Rydz <br />
-						(1867 - 1946)
+						Margaret Sanger <br />
+						(1879 - 1966)
 					</p>
 				</div>
 			</section>
 		</article>
-		<div class="quotote dark">
+		<div class="quotote dark animate">
 			<span class="text">
-				Kto nie rozumie historii, jest skazany na jej powtarzanie. <br />
-				A kiedy historia się powtarza, to stawka jest podwójna.
+				Zdaje się nam, że dość dobrze znamy historię, ale ilekroć dobieramy się do faktów, ogarnia nas zdumienie, wzburzenie, często
+				i zażenowanie.
 			</span>
 			<div class="line"></div>
 			<span class="author">
-				Pittacus Lore <br />
-				Jestem Numerem Cztery
+				Józef Hen, <br />
+				Nie boję się bezsennych nocy...
 			</span>
 		</div>
-		<section class="map"></section>
-		<div class="ornament">Mapa XX wieku</div>
+		<section class="map animate"></section>
+		<div class="ornament animate">Mapa XX wieku</div>
 		<section class="other__articles" id="OTHER">
+			<p class="title animate">Inne Wydarzenia</p>
 			<div class="container">
-				<div class="main">
+				<div class="main animate">
+					<img src="./img/traktatwersalski.jpg" alt="traktat wersalski" />
 					<p>traktat wersalski</p>
 				</div>
-				<div class="long">
+				<div class="long animate">
+					<img src="./img/rozejmwcamgiene.jpg" alt="rozejm w campiegene" />
 					<p>rozejm w compiègne</p>
 				</div>
-				<div class="box1">
+				<div class="box1 animate">
+					<img src="./img/akt5listopada.jpg" alt="akt 5 listopada" />
 					<p>akt 5 listopada</p>
 				</div>
-				<div class="box2">
+				<div class="box2 animate">
+					<img src="./img/rewolucja w rosji.jpg" alt="rewolucja w rosji" />
 					<p>rewolucja w rosji</p>
 				</div>
 			</div>
 		</section>
 		<section class="other__articles__description">
-			<div class="main">
+			<div class="main animate">
 				<h3 class="title">Traktat Wersalski</h3>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum sed mus facilisi vestibulum. Mattis consequat
-					porttitor orci, egestas a diam in. Tristique fringilla arcu ipsum lacinia nec imperdiet tristique. Libero quis faucibus
-					lectus sed quam orci elit sed mi. Dolor facilisi tincidunt nisi hendrerit etiam odio.
+					traktat pokojowy podpisany 28 czerwca 1919 roku przez Niemcy, mocarstwa Etenty (UK, Francja, USA, Włochy i Japonia),
+					państwa sprzymieżone i stowarzyszone kończący I wojnę światową. Dokument wszedł w życie 10 stycznia 1920 roku w Paryżu
+					który ustalił wiele granić w Europie i wprowadził nowy ład polityczny.
 				</p>
 			</div>
-			<div class="aside">
+			<div class="aside animate">
 				<section class="box">
 					<h3 class="title">Rewolucja w Rosji</h3>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci diam molestie urna non tortor elit. Egestas nisl non
-						aliquam vel faucibus fames mauris habitasse. Sit ullamcorper molestie habitasse quam pellentesque ornare ipsum.
-						Laoreet orci at eu pretium arcu ut.
+						W 1917 roku Rosja przeżyła dwie rewolucje. Pierwsza, lutowa doprowadziła do obalenia cara. Druga, październikowa,
+						oznaczała przejęcie władzy w Rosji przez bolszewików. Rosja słabo uprzemysłowiona, nie była przygotowa na
+						przedłużające się działania wojenne przez co panował kryzys gospodarczy, głód oraz wzrost zmarłych.
 					</p>
 				</section>
-				<section class="box">
+				<section class="box animate">
 					<h3 class="title">Akt 5 Listopada</h3>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci diam molestie urna non tortor elit. Egestas nisl non
-						aliquam vel faucibus fames mauris habitasse. Sit ullamcorper molestie habitasse quam pellentesque ornare ipsum.
-						Laoreet orci at eu pretium arcu ut.
+						manifest wydany 5 listopada 1916 roku w imieniu cesarza Niemiec i Austrii przez generałów-gubernatorów okupowanego
+						Królestwa Polskiego — niemieckiego H. Beselera i austriackiego K. Kuka. Celem ogłoszenia aktu było zjednanie
+						społeczeństwa polskiego i uzyskanie rekruta do dalszej wojny przeciw Rosji.
 					</p>
 				</section>
-				<section class="box">
+				<section class="box animate">
 					<h3 class="title">Rozejm w Campgiene</h3>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci diam molestie urna non tortor elit. Egestas nisl non
-						aliquam vel faucibus fames mauris habitasse. Sit ullamcorper molestie habitasse quam pellentesque ornare ipsum.
-						Laoreet orci at eu pretium arcu ut.
+						układ o zawieszeniu broni między Niemcami a Francją podpisany 22 czerwca 1940 o godzinie 18:50 w lesie Compiègne.
+						Przewodniczącym strony Sprzymierzonych był wódz naczelny wojsk, marszałek Ferdinand Foch, natomiast przewodniczącym
+						delegacji niemieckiej Matthias Erzberger.
 					</p>
 				</section>
 			</div>
 		</section>
-		<div class="quotote dark end">
+		<div class="quotote dark end animate">
 			<span class="text"> Każde zakończenie stanowi początek czegoś nowego ~ Libba Bray Mroczny sekret</span>
 		</div>
 		<section class="recapitulation">
 			<div class="container">
 				<div class="box">
-					<h3 class="title">Podsumowanie</h3>
-					<p>
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint tempore itaque sunt nisi cupiditate officia quo est
-						eius, ad, veniam voluptatem eum molestiae, autem modi doloribus quae culpa quasi optio. Quis hic ipsam esse suscipit
-						at. Quia, labore odio! Labore temporibus corrupti nostrum saepe recusandae quasi magnam iure enim at?
+					<h3 class="title animate">Podsumowanie</h3>
+					<p class="animate">
+						Historia pokazuje nam, że XX wiek zalicza się do jednych z najbardziej dramatycznych stuleci w historii dziejów. Był
+						to czas wielu tragicznych wydarzeń dla całego świata np. dwie wojny światowe ciagnące za sobą miliony ofiar zarówno
+						osób starszych jak i dzieci. Pod koniec lat 90 doszło do pamiętnej katastrofy w czarnobylskiej elektrowni jadrowej
+						na Ukranie (dawnych terenach ZSRR) przez którą skutki widzimi do dnia dzisiejszego. Lata XX to także czas wielkiej
+						ekspansji przemysłu, nauki i technologi. Niestety przyczyną dynamicznego rozwoju była najczęsciej chęć przewagi nad
+						rywalem aby wykorzystać ją przeciwko innym krajom.
 					</p>
 				</div>
 				<div class="box">
-					<h3 class="title">Ciekawostki</h3>
+					<h3 class="title animate">Ciekawostki</h3>
 					<ul>
-						<li>Lorem, ipsum dolor sit amet consectetur adipisicing elit</li>
-						<li>Lorem, ipsum dolor sit amet consectetur adipisicing elit</li>
-						<li>Lorem, ipsum dolor sit amet consectetur adipisicing elit</li>
-						<li>Lorem, ipsum dolor sit amet consectetur adipisicing elit</li>
-						<li>Lorem, ipsum dolor sit amet consectetur adipisicing elit</li>
+						<li class="animate">
+							Legenda o spożywaniu diety marchewkowej dla poprawy wzroku przez brytyjskie i polskie wojska pochodzi z czasów
+							II Wojny Światowej. Wymyślili ją Brytyjczycy aby niemieckie służby niedowiedziały się o wynalezeniu radaru który
+							z dokładna precyzją namierzał niemieckie obiekty w nocy
+						</li>
+						<li class="animate">
+							Rzeczy takie jak: kamizelka kuloodporna, walkie-talkie, aeroskop czy wykrywacz min zostały wynalezione przez
+							Polaków
+						</li>
+						<li class="animate">
+							Podczas II Wojny Światowej polskie podziemie współpracowalo z wywiadem japońskim. Władze Japonii podarowało
+							Polakom świetnie wyszkolonych kurierów, pieniądze oraz paszporty dyplomatyczne wzamian za korzystanie z naszych
+							ludzi, uważanych jako mistrzów w pozyskiwaniu informacji w celu działań wywiadowczych przeciwko ZSRR i III
+							Rzeszy.
+						</li>
 					</ul>
 				</div>
 			</div>
 			<aside>
-				<a href="#PL"><button class="navigation__btn">PL</button></a>
-				<a href="#USA"><button class="navigation__btn">USA</button></a>
-				<a href="#OTHER"><button class="navigation__btn">INNE</button></a>
+				<a href="#PL"><button class="navigation__btn animate">PL</button></a>
+				<a href="#USA"><button class="navigation__btn animate">USA</button></a>
+				<a href="#OTHER"><button class="navigation__btn animate">INNE</button></a>
 				<a href="#HOME">
-					<button class="home__btn">
+					<button class="home__btn animate">
 						<i class="bx bxs-chevrons-up"></i>
 					</button>
 				</a>
@@ -714,6 +693,18 @@
 			<p>Strona stworzona na potrzebu konkursu "Póki nie jest zapóźno"</p>
 			<p class="year">2022</p>
 		</footer>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+			integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"
+			integrity="sha512-5efjkDjhldlK+BrHauVYJpbjKrtNemLZksZWxd6Wdxvm06dceqWGLLNjZywOkvW7BF032ktHRMUOarbK9d60bg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
 		<script src="./scripts/app.js"></script>
 	</body>
 </html>
